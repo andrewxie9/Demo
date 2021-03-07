@@ -1,0 +1,15 @@
+
+x = [0, 1, 2, 3, 4, 5, 6]
+m = 5
+c = -1
+
+#y = [m*x_i + c for x_i in x]
+#print(y)
+
+import numpy as np
+X = np.array(x)
+Y = m*X + c
+print(Y)
+
+import matplotlib.pyplot as plt
+plt.scatter(X, Y)
